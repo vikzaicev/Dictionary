@@ -1,0 +1,139 @@
+// Файл обнуляющих стилей
+@import "nullstyle.scss";
+
+.wraper {
+	display: flex;
+	flex-direction: column;
+	flex: 1 1 auto;
+	overflow: hidden;
+	min-height: 100%;
+	width: 100%;
+}
+body {
+	background: -webkit-linear-gradient(45deg, #ff2cc2, #962993); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		45deg,
+		#ff2cc2,
+		#962993
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	font-family: "Poppins";
+	font-size: 16px;
+	font-weight: 400;
+	color: #26291d;
+}
+body.noscrol {
+	overflow: hidden;
+}
+
+main {
+	flex: 1 1 auto;
+}
+
+.contener {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 0px 10px;
+}
+
+
+
+.header {
+	padding: 30px 0;
+
+		&__contener {
+		}
+
+		&__title {
+			text-align: center;
+			font-size: 36px;
+			font-weight: 600;
+		}
+}
+
+.hero {
+
+		&__contener {
+		}
+
+		&__top {
+			background-color: rgba(248, 247, 247, 0.3);
+			padding: 15px;
+			border-radius: 10px;
+			margin-bottom: 5px;
+			
+		}
+
+		&__forms {
+			
+		}
+
+		&__form {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+
+		&__input {
+			padding: 10px;
+			border-radius: 10px;
+			width: 100%;
+			margin-right: 20px;
+		}
+
+		&__button {
+			padding: 10px;
+			width: 100px;
+			border-radius: 10px;
+			background-color: rgb(126, 18, 18);
+			transition: all 0.3s ease 0s;
+			color: #fff;
+			@media (any-hover: hover) {
+				&:hover {
+					background-color: rgb(66, 11, 11);
+				}
+			}
+		}
+
+		&__error {
+			background-color: rgba(248, 247, 247, 0.3);
+			padding: 15px;
+			border-radius: 10px;
+			display: none;
+		}
+
+		&__results {
+		}
+}
+.results {
+	display: none;
+	background-color: rgba(248, 247, 247, 0.3);
+			padding: 15px;
+			border-radius: 10px;
+
+		&__info {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			
+		}
+
+		&__world {
+			font-size: 20px;
+			font-weight: 600;
+		}
+
+		&__sound {
+			cursor: pointer;
+		}
+
+		&__list {
+		}
+		&__part {
+			color: #a70e55;
+		}
+}
+.footer {
+
+		&__contener {
+		}
+}

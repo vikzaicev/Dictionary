@@ -1,0 +1,225 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+.wraper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  overflow: hidden;
+  min-height: 100%;
+  width: 100%;
+}
+
+body {
+  background: -webkit-linear-gradient(45deg, #ff2cc2, #962993);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -o-linear-gradient(45deg, #ff2cc2, #962993);
+  background: linear-gradient(45deg, #ff2cc2, #962993);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 400;
+  color: #26291d;
+}
+
+body.noscrol {
+  overflow: hidden;
+}
+
+main {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.contener {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0px 10px;
+}
+
+.header {
+  padding: 30px 0;
+}
+
+.header__title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.hero__top {
+  background-color: rgba(248, 247, 247, 0.3);
+  padding: 15px;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  margin-bottom: 5px;
+}
+
+.hero__form {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.hero__input {
+  padding: 10px;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  width: 100%;
+  margin-right: 20px;
+}
+
+.hero__button {
+  padding: 10px;
+  width: 100px;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  background-color: #7e1212;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  color: #fff;
+}
+
+@media (any-hover: hover) {
+  .hero__button:hover {
+    background-color: #420b0b;
+  }
+}
+
+.hero__error {
+  background-color: rgba(248, 247, 247, 0.3);
+  padding: 15px;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  display: none;
+}
+
+.results {
+  display: none;
+  background-color: rgba(248, 247, 247, 0.3);
+  padding: 15px;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+}
+
+.results__info {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.results__world {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.results__sound {
+  cursor: pointer;
+}
+
+.results__part {
+  color: #a70e55;
+}
